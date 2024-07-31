@@ -1,6 +1,8 @@
 <template>
   <div class="project-card">
-    <h2>{{ project.title }}</h2>
+    <router-link :to="`/projects/${project.id}`">
+      <h2>{{ project.title }}</h2>
+    </router-link>
     <p>{{ project.description }}</p>
   </div>
 </template>
